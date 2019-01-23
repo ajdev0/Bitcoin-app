@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:id="@+id/Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="Welcome :" />
+
+        <TextView
+            android:id="@+id/wel_emil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#0f0ff0"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/Addreses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Welcome"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:id="@+id/bitcoin_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/editBtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:hint="LiteCoin ADDRESS " />
+            <Button
+                android:id="@+id/btnBtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:background="@drawable/button_style"
+                android:text="save" /> />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/xapo_address"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editXapo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:hint="XAPO ADDRESS"
+                android:inputType="text"
+                />
+
+            <Button
+                android:id="@+id/btnXapo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:inputType="text"
+                android:text="save" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Withdraw"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Withdraw"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:background="@drawable/button_style"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_below="@+id/Addreses"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Earn More"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#0f0ff0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#0f0ff0"
+            android:text="Share the app and Get 100.000 Kh On Every Install !"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#0f0ff0"
+
+            android:textSize="18dp"
+            android:background="@drawable/button_style"
+            android:text="Share" />
+
+        <Button
+            android:id="@+id/btnRate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#0f0ff0"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_style"
+            android:gravity="center"
+            android:text="Rate Us and Get 100.000 Kh" />
+    </LinearLayout>
+    <com.startapp.android.publish.ads.banner.Banner
+        android:id="@+id/startAppBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

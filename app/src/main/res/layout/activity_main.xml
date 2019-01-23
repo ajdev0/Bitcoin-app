@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aj.ak.com.litecoin.MainActivity">
+
+    <view
+        android:id="@+id/view2"
+        class="android.support.v4.widget.DrawerLayout"
+        id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/uber_box"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="mLTC"
+        android:textColor="#000"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/btnSpin"
+        android:layout_toRightOf="@+id/btnSpin"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="centerInside"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/spin" />
+    <Button
+        android:id="@+id/btnSpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:background="@drawable/button_style"
+        android:text="Spin" />
+
+    <LinearLayout
+
+        android:id="@+id/count"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/btnSpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBarH"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <com.startapp.android.publish.ads.banner.Banner
+        android:id="@+id/startAppBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/ads_btn1"
+        android:layout_below="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_style"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_weight="0.5"
+            android:text="1000" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="@drawable/button_style"
+            android:layout_weight="0.5"
+            android:text="2000" />
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="@drawable/button_style"
+            android:layout_weight="0.5"
+            android:text="3000" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ads_btnm2"
+        android:layout_below="@+id/ads_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="@drawable/button_style"
+            android:layout_weight="0.5"
+            android:text="4000" />
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="4dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/button_style"
+            android:layout_weight="0.5"
+            android:text="5000" />
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="@drawable/button_style"
+            android:layout_weight="0.5"
+            android:text="6000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

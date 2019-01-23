@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bitcoin</string>
+    <!--Invite Strings -->
+    <string name="invitation_deep_link">https://whp7j.app.goo.gl/29hQ</string>
+    <string name="short_dynmic_link">https://whp7j.app.goo.gl/29hQ</string>
+    <string name="invitation_custom_image">https://s14.postimg.org/ncknsdyox/ic_launcher.png</string>
+    <string name="invitation_message">Get 10000 Kh On Every app install by you Link !</string>
+    <string name="invitation_title">Bitcoin Miner</string>
+    <string name="invitation_cta">038429555065</string>
+    <string name="title_activity_login">Sign in</string>
+</resources>
